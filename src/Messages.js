@@ -8,7 +8,9 @@ export default function Messages({
   svgIcon,
   svgBackColor,
   svgShadowColor,
-  panelColor
+  panelColor,
+  linkForMessage,
+  contentForMessage
  }) {
   const svgImage = svgIcon || require("./logo.svg").default
   return (
@@ -20,6 +22,7 @@ export default function Messages({
         />
         <div className="bot-message" style={{color: msgTextColor, fontFamily: msgTextFont, backgroundColor: msgBarColor}}>
             {message}
+            <a href={linkForMessage} style={{color: msgTextColor}}>{contentForMessage}</a>
         </div>
     </div>
   );

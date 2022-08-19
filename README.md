@@ -25,6 +25,8 @@ Basic chat bot to integerate in various projects.
        * `titleFontStyle` - font for title text
        * `titleBarColor` - set the color of the background of title
        * `panelColor` - set the color of the panel background
+       * `linkForMessage` - link to pass when click on ContentForMessage
+       * `contentForMessage` - text shown in the message
   
   - Chatbot.js has two component in it:
     - Button.js

@@ -15,13 +15,17 @@ import Chatbot from './Chatbot';
  * titleFontStyle - font for title text
  * titleBarColor - set the color of the background of title
  * panelColor - set the color of the panel background
+ * linkForMessage - link to pass when click on ContentForMessage
+ * contentForMessage - text shown in the message
  */
 
 function App() {
   return (
     <div className="App">
       <Chatbot 
-        message={"Hello! Welcome to AntStack"}
+        message={`Hello! Welcome to AntStack`}
+        linkForMessage={'https://www.youtube.com'}
+        contentForMessage={'Click Here!'}
         msgTextColor={"white"}
         msgTextFont={"sans-serif"}
         msgBarColor={"black"}
