@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Chat-Bot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Basic chat bot to integerate in various projects.
 
-## Available Scripts
+## How to run 
+  - Using nodejs16.x
+  - `npm install` - to install the dependencies
+  - `npm start` to run the chat bot on `localhost:3000`.
+  
+## Regarding the code
 
-In the project directory, you can run:
+### Components
+  - Chatbot.js
+    - Has various props passed to it
+    * Chatbot props:
+       * `message` - it will be displayed inside the panel 
+       * `msgTextColor` - Color of message text
+       * `msgTextFont` - font for message text
+       * `msgBarColor` - set the color of the background of message
+       * `svgIcon` - icon that will be displayed in icon as well as inside panel
+       * `svgBackColor` - set the color of the background of svg
+       * `svgShadowColor` - set the color of the shadow under the svg
+       * `title` - it will be displayed on the header of chatbot
+       * `titleFontColor` - Color of title text
+       * `titleFontStyle` - font for title text
+       * `titleBarColor` - set the color of the background of title
+       * `panelColor` - set the color of the panel background
+  
+  - Chatbot.js has two component in it:
+    - Button.js
+      - It include the chatbot in closed form
+      - <img width="120" alt="image" src="https://user-images.githubusercontent.com/31852437/185574254-c4fe66b5-0adb-43b0-aed7-73e6a0e049ef.png">
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - Panel.js
+      - It includes the chatbot in open form
+      - <img width="433" alt="image" src="https://user-images.githubusercontent.com/31852437/185574535-2c757dcf-b60b-4d98-9cf4-de36d9494703.png">
+    
+  - Panel.js has two component as well:
+    - Header.js
+      - It basically has the title of the chatbot.
+    - Messages.js
+      - It will show the badge and the message.
+      - The image you pass as the prop in the Chatbot is being used in both Button as well as the Badge.
