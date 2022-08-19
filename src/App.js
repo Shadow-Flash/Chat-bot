@@ -32,7 +32,7 @@ function App() {
         titleFontColor={'black'}
         titleFontStyle={"sans-serif"}
         titleBarColor={"red"}
-        panelColor={"#ffcccb"}
+        panelColor={"#fff"}
       />
     </div>
   );
